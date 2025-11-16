@@ -1,121 +1,70 @@
 import { useState } from "react";
 
-// Import all photos per year (contoh struktur, sesuaikan dengan file kamu)
-// 2021
+// Replace month images with your 5 year-based photos
 import y2021_1 from "../assets/images/memories/2021/1.jpg";
-// Tambahkan semua foto tahun 2021...
-
-// 2022
 import y2022_1 from "../assets/images/memories/2022/1.jpg";
-// Tambahkan semua foto tahun 2022...
-
-// 2023
 import y2023_1 from "../assets/images/memories/2023/1.jpg";
-
-// 2024
 import y2024_1 from "../assets/images/memories/2024/1.jpg";
-
-// 2025
 import y2025_1 from "../assets/images/memories/2025/1.jpg";
 
-// Struktur data kini berdasarkan tahun, bukan bulan
-const yearPhotos = {
-  "2021": [y2021_1],
-  "2022": [y2022_1],
-  "2023": [y2023_1],
-  "2024": [y2024_1],
-  "2025": [y2025_1],
-};
+export default function LoveCalendar() {
+  const [activeIndex, setActiveIndex] = useState(null);
 
-export default function Gallery() {
-  const [selectedYear, setSelectedYear] = useState(null);
-  const [selectedPhoto, setSelectedPhoto] = useState(null);
+  // Use year photos instead of month photos
+  const favoritePhotos = [
+    { month: "2021", image: y2021_1, description: "" },
+    { month: "2022", image: y2022_1, description: "" },
+    { month: "2023", image: y2023_1, description: "" },
+    { month: "2024", image: y2024_1, description: "" },
+    { month: "2025", image: y2025_1, description: "" }
+  ];
 
-  const years = Object.keys(yearPhotos).map((year) => ({
-    name: year,
-    photos: yearPhotos[year].length,
-  }));
+  const handleToggle = (index) => {
+    if (activeIndex === index) setActiveIndex(null);
+    else setActiveIndex(index);
+  };
 
   return (
-    <div className="p-4 max-w-6xl mx-auto">
-      <h1 className="text-2xl md:text-3xl font-bold text-pink-200 mb-6 text-center">
-        Our Memories by Year
-      </h1>
+    <div className="p-4 sm:p-6 md:p-8">
+      <h1 className="text-3xl font-bold text-pink-200 mb-8 text-center">Our Love Calendar</h1>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-        {years.map((year) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {favoritePhotos.map((photo, index) => (
           <div
-            key={year.name}
-            className="relative group overflow-hidden rounded-lg shadow-md cursor-pointer hover:shadow-lg transition-all duration-200"
-            onClick={() => setSelectedYear(year.name)}
+            key={index}
+            className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-pink-500/30 transition-all duration-300 cursor-pointer"
+            onClick={() => handleToggle(index)}
           >
-            <div className="aspect-square bg-gradient-to-br from-pink-700 to-purple-700 flex flex-col items-center justify-center p-2">
-              <span className="text-lg font-semibold text-pink-100 text-center">
-                {year.name}
-              </span>
-              <span className="mt-1 bg-pink-800 text-pink-200 text-xs px-2 py-1 rounded-full">
-                {year.photos} {year.photos === 1 ? "photo" : "photos"}
-              </span>
+            <div className="h-96 relative">
+              <img
+                src={photo.image}
+                alt={photo.month}
+                className="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-500"
+              />
+
+              {/* Gradient & description */}
+              <div
+                className={`absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent flex items-end p-4 transition-opacity duration-300 ${
+                  activeIndex === index ? "opacity-100" : "opacity-0"
+                } group-hover:opacity-100`}
+              >
+                <p
+                  className={`text-white transition-transform duration-300 ${
+                    activeIndex === index ? "translate-y-0" : "translate-y-4"
+                  } group-hover:translate-y-0`}
+                >
+                  {photo.description}
+                </p>
+              </div>
+
+              {/* Label using year */}
+              <div className="absolute top-0 left-0 bg-pink-700 text-pink-100 px-3 py-1 rounded-br-lg text-sm">
+                {photo.month}
+              </div>
             </div>
           </div>
         ))}
       </div>
-
-      {/* Popup for specific year photos */}
-      {selectedYear && (
-        <div className="fixed inset-0 bg-black bg-opacity-95 z-50 flex flex-col">
-          <div className="flex justify-between items-center p-4 border-b border-pink-800 bg-black bg-opacity-80">
-            <h2 className="text-xl md:text-2xl font-bold text-pink-200">
-              {selectedYear} Memories
-            </h2>
-            <button
-              className="text-pink-300 hover:text-white text-2xl"
-              onClick={() => setSelectedYear(null)}
-            >
-              ✕
-            </button>
-          </div>
-
-          <div className="flex-1 overflow-y-auto p-2 sm:p-4">
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-3 md:gap-4">
-              {yearPhotos[selectedYear].map((photo, index) => (
-                <div
-                  key={index}
-                  className="aspect-square rounded-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300"
-                  onClick={() => setSelectedPhoto(index)}
-                >
-                  <img
-                    src={photo}
-                    alt={`Memory ${index + 1}`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      )}
-
-      {selectedPhoto !== null && (
-        <div className="fixed inset-0 bg-black z-50 flex items-center justify-center">
-          <button
-            className="absolute top-4 right-4 text-white text-3xl z-50"
-            onClick={() => setSelectedPhoto(null)}
-          >
-            ✕
-          </button>
-
-          <img
-            src={yearPhotos[selectedYear][selectedPhoto]}
-            alt={`Memory from ${selectedYear}`}
-            className="w-full h-full object-contain"
-          />
-
-          <div className="absolute bottom-4 left-4 text-white bg-black bg-opacity-60 px-4 py-2 rounded text-sm z-50">
-            {selectedYear} - Photo {selectedPhoto + 1}
-          </div>
-        </div>
-      )}
     </div>
   );
 }
