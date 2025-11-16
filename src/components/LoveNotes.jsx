@@ -12,97 +12,104 @@ export default function LoveNotes() {
           </p>
 
           <p>
-            Happy 19th Birthday my lil sister, my best best friend ❣ Hallo adekuu!
-            Rasanya baru kemarin kita masih bocah yang cerita hal random, ketemu
-            hampir tiap hari di rumah katiwi, jalan-jalan bareng, main game granny
-            dan selendrina awokaowk, terus pergi latihan paski dan latihan dance
-            bareng. Ingat gak? Dulu kita berdua masih belum terlalu sadar tentang
-            hidup yang seperti sekarang.
+            Happy 19th Birthday my lil sister, my best best friend ❣
+            Hallo adekuu! Rasanya baru kemarin Kita masih bocah yg crita hal random,
+            ketemu hampir tiap hari di rmh katiwi, jalan" bareng, main game granny,
+            selendrina awokaowk trs jg prgi latihan paski dan latihan dance bareng,
+            ingat gak? Disitu kita berdua msh belum terlalu sadar tentang hidup yg
+            kayak sekarang. Tapi sekarang, wiga sudah ketemu usianya ka tiwi, jadi kita
+            sama-sama 19 tahun yeay! dan pastinya wiga sdh sadar skli tentang kehidupan
+            itu seperti apa, and honestly, i'm so proud of u! Sekarang wiga sudah kuliah,
+            mulai ngeraih mimpi dan pelan" tumbuh jadi prmpuan yang kuat, dewasa, tapi
+            masih punya hati selembut dulu.
           </p>
 
           <p>
-            Tapi sekarang, wiga sudah sampai di usia ka tiwi, kita sama-sama 19
-            tahun yeay! Dan pastinya wiga sudah sadar sekali tentang kehidupan itu
-            seperti apa, and honestly, i'm so proud of u! Sekarang wiga sudah
-            kuliah, mulai meraih mimpi, dan pelan-pelan tumbuh jadi perempuan yang
-            kuat, dewasa, tapi masih punya hati selembut dulu.
+            Katiwi bangga skli liat wiga berkembang, ngeliat cranya wiga bertahan,
+            belajar menerima trs jg berjuang untuk mimpi"nya wiga. Thank u ya, for always
+            being there for being my lil sister, my best friend and my home at the same
+            time. You've been more than just a friend to me. You're family, u're the kind
+            of person I'll always protect, always pray for, and always call "home."
           </p>
 
           <p>
-            Katiwi bangga sekali lihat wiga berkembang, lihat caranya wiga
-            bertahan, belajar menerima, dan berjuang untuk mimpi-mimpinya. Thank u
-            ya, for always being there — for being my lil sister, my best friend,
-            and my home at the same time. You’ve been more than just a friend to
-            me. You’re family. You're the kind of person I’ll always protect,
-            always pray for, and always call “home.”
+            Di umur wiga yang ke 19 ini, katiwi cuma mau wiga tau bbrpa hal penting yg
+            mungkin gak selalu kaka ucapin, tapi kaka maksud dari hati. Pertama, jaga
+            sholatmu. Karena itu bukan cuma kewajiban, tapi tempat wiga balik kalau semua
+            terasa berat. Sholat itu pelukan paling nyata dari Allah, dan katiwi pengen
+            wiga gk pernah jauh dari pelukan itu.
           </p>
 
           <p>
-            Di umurmu yang ke 19 ini, ada beberapa hal yang mungkin tidak selalu
-            kakak ucapkan, tapi kakak maksud dari hati. Pertama, jaga sholatmu.
-            Karena itu bukan cuma kewajiban, tapi tempat wiga kembali saat semuanya
-            terasa berat. Sholat itu pelukan paling nyata dari Allah, dan katiwi
-            ingin wiga tidak pernah jauh dari pelukan itu.
+            Kedua, jaga auratmu, jaga hatimu, jaga dirimu baik-baik. Dunia ini tdk selalu
+            ramah, but u can always choose to be kind and strong at the same time. Kalau
+            nanti wiga capek kuliah, kalau tugas numpuk, kalau wiga ngerasa semua orang
+            sibuk dan gk ada yang ngerti please remember, you're not alone. You've got me.
           </p>
 
           <p>
-            Kedua, jaga auratmu, jaga hatimu, jaga dirimu baik-baik. Dunia ini
-            tidak selalu ramah, but u can always choose to be kind and strong at
-            the same time. Kalau nanti wiga capek kuliah, tugas numpuk, atau
-            merasa tidak ada yang mengerti, please remember — you’re not alone.
-            You’ve got me.
+            I might not always be near, but I'll always be here. Kalau wiga butuh tempat
+            cerita, tempat istirahat, tempat nangis sekalipun, just come to me. Wlaupun
+            Maybe one day, life will take us to different paths. U sibuk dengan duniamu,
+            katiwi juga mungkin sibuk dengan hidupku. But please don't forget me, okay?
+            Don't let the world make you forget the people who truly love you 🥺 Because I
+            promise, no matter how far we go, you'll always have a place in my heart.
+            Always.
           </p>
 
           <p>
-            I might not always be near, but I’ll always be here. Kalau wiga butuh
-            tempat cerita, tempat istirahat, tempat nangis sekalipun, just come to
-            me. Maybe one day life will take us to different paths… Tapi jangan
-            lupa sama kakak ya? Don’t forget the people who truly love you 🥺
+            Kaka doain semoga Allah jaga wiga di setiap langkah, semoga wiga selalu
+            dilindungi dari hal" yg gk baik, semoga wiga dikelilingi org" yg tulus, yg
+            sayang wiga dengan cara yg benar. Semoga perkuliahanmu berjalan lancar,
+            semoga ilmu yang u dapetin jadi berkah, dan semoga u bisa jadi kebanggaan
+            untuk banyak orang terutama untuk dirinya wiga sendiri, and beyond that, i
+            hope you never lose yourself. Never forget who you are, and never doubt how
+            amazing you can be. You're enough. You always have been. Even on the days you
+            feel like you're not doing enough, you're still doing great, trust me. Kalau
+            suatu hari nanti, wiga ngerasa sendirian, atau kehilangan arah, atau ragu
+            sama hidup just look up, and pray. Allah selalu ada! Semoga Allah selalu jaga
+            hubungan kita, selalu satukan kita dalam kebaikan, dan semoga one day, kita
+            bisa ketemu lagi… di tempat yang paling indah di surganya, Aamiin 🤍
           </p>
 
           <p>
-            Kaka doain semoga Allah jaga wiga di setiap langkah, semoga wiga
-            selalu dilindungi dari hal-hal yang tidak baik, semoga wiga
-            dikelilingi orang-orang yang tulus. Semoga kuliahmu lancar, ilmunya
-            berkah, dan semoga wiga bisa jadi kebanggaan untuk banyak orang
-            terutama dirinya sendiri. Never lose yourself, never doubt how amazing
-            you are. You’re enough. Always.
+            Makasih bnyak krn sdh sempat ada di hari katiwi gk punya apa". Di hari yg
+            katiwi butuh sesuatu dn wiga ada untuk itu. Makasih sudah jadi adik sekaligus
+            keluarga yang selalu ada walaupun tidak secara fisik. Katiwi selalu ingat
+            sampai kapanpun itu. Di hari wiga datang sebagai adek kelas yg katanya bafans
+            skli sm katiwi BOHHH 🫣 trus dihari pas kita pulang sekolah SMP, wiga traktir
+            katiwi belanja bakso dan pergi alfamidi trs beli snack. Di hari kita belajar
+            dance bareng di rumah katiwi, sampai kita bisa sedekat ini, wiga selalu datang
+            ke rumah katiwi apalagi di hari libur, sabtu dan minggu wiga seriiiing skli ke
+            rumah katiwi buat cerita", main sama katiwi. Katiwi ingat wiga cerita tentang
+            kehidupannya wiga, tentang sesuatu yg bikin wiga nangis trs disitu katiwi
+            peluk wiga. Ingat gak? Hihi katiwi pengen wiga ingat terus waktu yg pernah
+            kita bareng"in dari dulu smpai sekarang… Katiwi harap, wiga bisa dapatkan
+            pasangan yg betul" cocok dgn wiga secara lahir batin dan tentunya dgn cara yg
+            benar. Kalau wiga sudah punya pasangan yg btul" wiga pilih di waktu dewasa
+            nanti, katiwi harap, dia bukan seseorang yang buat wiga sakit. Tapi, katiwi
+            harap dia orang yang bisa jdi rumah kedua untuk wiga, jadi kebahagiaannya
+            wiga, tempat paling nyaman, dan yang selalu pengen wiga tetap di situ. Krn
+            wiga orgnya ceria, baik, bisa berkomunikasi dgn baik, pendengar yg baik, anak
+            sholehah, pintar, cantik, dan lebih dari semua itu MASYAALLAH MASYAALLAH! Krn
+            itu, wiga pantas dpt yg setara dgn wiga, yang memperlakukan wiga dengan baik
+            dan halus seperti wiga memperlakukan org" dgn baik dan halus. Maaf kalau slama
+            ini SEMPAT blm bisa bantu disaat wiga lagi butuh tpi percaya ya, katiwi selalu
+            usahakan itu!
           </p>
 
           <p>
-            Kalau suatu hari nanti wiga merasa sendirian, kehilangan arah, atau
-            ragu sama hidup — look up, and pray. Allah selalu ada! Semoga Allah
-            selalu jaga hubungan kita, selalu satukan kita dalam kebaikan, dan
-            semoga one day kita ketemu lagi di tempat paling indah… di surga,
-            Aamiin 🤍
+            So here's to your 19th year! A year to grow, to heal, to love, and to bloom.
+            Keep being kind, keep being u. You're loved more than u know, and u deserve
+            nothing but happiness. Happy birthday, my adek, my forever friend. I love u,
+            and I'll never stop being proud of you 🌷
           </p>
 
-          <p>
-            Makasih banyak karena sudah ada di hari-hari kakak tidak punya apa-apa.
-            Makasih sudah jadi adik sekaligus keluarga yang selalu ada walaupun
-            tidak secara fisik. Dari wiga datang sebagai adek kelas yang katanya
-            ngefans banget sama katiwi BOHHH 🫣 sampai hari kita latihan dance,
-            jalan, cerita, nangis bareng — semua itu kakak ingat.
+          <p className="text-2xl font-semibold mt-8 neon-text">
+            — from your kakak who'll always be here, in every season, in every prayer,
+            and in every piece of love you'll ever need 🕊
           </p>
-
-          <p>
-            Katiwi harap nanti wiga dapat pasangan yang betul-betul cocok secara
-            lahir batin dan tentunya dengan cara yang benar. Wiga ceria, baik,
-            pintar, cantik, anak sholehah, komunikatif, hati lembut — MASYAALLAH.
-            Wiga pantas dapat yang setara.
-          </p>
-
-          <p>
-            So here’s to your 19th year! A year to grow, to heal, to love, and to
-            bloom. Keep being kind, keep being u. You’re loved more than you know,
-            and you deserve nothing but happiness.
-          </p>
-
-          <p className="text-2xl font-semibold mt-8 neon-text">Forever Yours,</p>
-          <p className="text-xl">your kakak who’ll always be here 🤍</p>
         </div>
-
-      
       </div>
     </div>
   );
