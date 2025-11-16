@@ -23,8 +23,8 @@ const FloatingText = ({ text, delay = 0 }) => {
 export default function BirthdayMessage({ onComplete }) {
   const [step, setStep] = useState(0);
   const [showConfetti, setShowConfetti] = useState(false);
-  const name = "Fajar Ananto";
-  const birthDate = "2 oktober 2003";
+  const name = "Andi Wiga Pratami";
+  const birthDate = "17 november 2006";
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -57,37 +57,7 @@ export default function BirthdayMessage({ onComplete }) {
       </div>
 
       {/* === Kredit Lagu di Pojok Kanan Bawah === */}
-      <div className="fixed bottom-2 right-4 z-50 text-[0.65rem] text-gray-300 bg-black bg-opacity-50 px-2 py-1 rounded max-w-xs text-right leading-tight">
-        🎵 <strong>Eternal Love</strong> by{" "}
-        <a
-          href="https://www.twisterium.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline"
-        >
-          Twisterium
-        </a>
-        <br />
-        Music promoted by{" "}
-        <a
-          href="https://www.free-stock-music.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline"
-        >
-          Free-Stock-Music.com
-        </a>
-        <br />
-        Licensed under{" "}
-        <a
-          href="https://creativecommons.org/licenses/by-sa/3.0/deed.en_US"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline"
-        >
-          CC BY-SA 3.0
-        </a>
-      </div>
+
 
       {/* Konten Utama */}
       <div className="absolute inset-0 flex flex-col items-center justify-center z-10 p-4 overflow-y-auto">
@@ -127,7 +97,7 @@ export default function BirthdayMessage({ onComplete }) {
             }`}
           >
             <div className="text-3xl md:text-6xl font-bold text-pink-400 mb-8 neon-text">
-              Happy 22!
+              Happy 19!
             </div>
           </div>
         )}
@@ -138,12 +108,8 @@ export default function BirthdayMessage({ onComplete }) {
               step === 4 ? "animate-fadeIn" : ""
             }`}
           >
-            <p className="text-base md:text-xl text-white leading-relaxed">
-              To the most amazing woman in my life, may your birthday be as
-              beautiful as you are. Every moment with you feels like a dream
-              come true. I pray for your happiness, health, and success in
-              everything you do. You deserve all the love in the universe. I
-              love you more than words can express. love uu sayang❤️
+            <p className="text-center md:text-xl text-white leading-relaxed">
+              Be Happy
             </p>
           </div>
         )}

@@ -5,24 +5,24 @@ import { useState } from "react";
 const songs = [
   {
     id: 1,
-    title: "You!",
-    artist: "LANY",
+    title: "Freaky Friday",
+    artist: "Lil Dicky ft. Chris Brown",
     embedUrl:
-      "https://open.spotify.com/embed/track/2VMhO32IsyhshnUoKhjCBE?utm_source=generator",
+      "https://open.spotify.com/embed/track/6dbSBQXCctYSVryynHXaZ4?utm_source=generator",
   },
   {
     id: 2,
-    title: "Our To Keep",
-    artist: "Kendis, Adis",
+    title: "Without You",
+    artist: "Braaten & Aili",
     embedUrl:
-      "https://open.spotify.com/embed/track/3Puhw21QI2MKR4rdvyPuIb?utm_source=generator",
+      "https://open.spotify.com/embed/track/2MYFRX1xLPjCfDBwsh8mdM?utm_source=generator",
   },
   {
     id: 3,
-    title: "Saat Bahagia",
-    artist: "Ungu",
+    title: "Spring Day",
+    artist: "BTS",
     embedUrl:
-      "https://open.spotify.com/embed/track/4Pa4h41IgFmhbxsnVZO9pl?utm_source=generator",
+      "https://open.spotify.com/embed/track/2j1fFjWHCI9KJSwcuYAOyF?utm_source=generator",
   },
 ];
 

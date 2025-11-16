@@ -1,58 +1,11 @@
-
-
-
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Gallery from './Gallery';
-import LoveCalendar from './LoveCalendar';
 import LovePuzzle from './LovePuzzle';
 import LoveNotes from './LoveNotes';
 import MusicPlayer from './MusicPlayer';
-import { FaHome, FaImages, FaCalendarAlt, FaPuzzlePiece, FaHeart, FaMusic } from 'react-icons/fa';
+import { FaImages, FaPuzzlePiece, FaHeart, FaMusic } from 'react-icons/fa';
 import bg from '../assets/bg-space.jpg';
 import ustogether from '../assets/images/couple2.jpg';
-
-const RelationshipTimer = () => {
-  const [duration, setDuration] = useState({
-    years: 0,
-    months: 0,
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0
-  });
-
-  useEffect(() => {
-    const startDate = new Date('2025-04-04');
-    const updateTimer = () => {
-      const now = new Date();
-      const diff = now - startDate;
-
-      const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
-      const months = Math.floor((diff % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24 * 30));
-      const days = Math.floor((diff % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-      setDuration({ years, months, days, hours, minutes, seconds });
-    };
-
-    updateTimer();
-    const interval = setInterval(updateTimer, 1000);
-    return () => clearInterval(interval);
-  }, []);
-
-  return (
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
-      {Object.entries(duration).map(([unit, value]) => (
-        <div key={unit} className="bg-pink-800 bg-opacity-50 p-4 rounded-lg text-center">
-          <div className="text-3xl font-bold text-pink-200">{Math.floor(value)}</div>
-          <div className="text-sm text-pink-300 uppercase">{unit}</div>
-        </div>
-      ))}
-    </div>
-  );
-};
 
 export default function MainMenu({ currentPage, setCurrentPage }) {
   const [hoverEffect, setHoverEffect] = useState(null);
@@ -69,9 +22,7 @@ export default function MainMenu({ currentPage, setCurrentPage }) {
   };
 
   const menuItems = [
-    { id: 'home', icon: <FaHome />, label: 'Home' },
     { id: 'memories', icon: <FaImages />, label: 'Our Memories' },
-    { id: 'calendar', icon: <FaCalendarAlt />, label: 'Love Calendar' },
     { id: 'puzzle', icon: <FaPuzzlePiece />, label: 'Love Puzzle' },
     { id: 'notes', icon: <FaHeart />, label: 'Love Notes' },
     { id: 'music', icon: <FaMusic />, label: 'Our Song' }
@@ -104,6 +55,7 @@ export default function MainMenu({ currentPage, setCurrentPage }) {
 
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row">
+          {/* Sidebar */}
           <div className="w-full md:w-64 mb-8 md:mb-0 md:mr-8">
             <div className="bg-pink-900 bg-opacity-50 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-pink-400 border-opacity-30">
               <h2 className="text-2xl font-bold text-pink-200 mb-6 text-center">Our Love Journey</h2>
@@ -134,64 +86,16 @@ export default function MainMenu({ currentPage, setCurrentPage }) {
             </div>
           </div>
 
+          {/* Content Area */}
           <div className="flex-1">
             <div className="bg-pink-900 bg-opacity-50 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-pink-400 border-opacity-30 min-h-[80vh]">
-              {currentPage === 'home' && (
-                <div className="text-center">
-                  <h1 className="text-4xl font-bold text-pink-200 mb-6">Welcome to Our Special Place</h1>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                    <div className="bg-pink-800 bg-opacity-50 rounded-xl p-6 border border-pink-400 border-opacity-30">
-                      <h2 className="text-2xl font-semibold text-pink-100 mb-4">Our Love Timeline</h2>
-                      <RelationshipTimer />
-                    </div>
-                    <div className="relative group overflow-hidden rounded-xl">
-                      <img
-                        src={ustogether}
-                        alt="Us together"
-                        className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-pink-900 via-transparent to-transparent opacity-70"></div>
-                      <div className="absolute bottom-0 left-0 p-4 text-white">
-                        <p className="text-xl font-semibold">Forever Yours</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="bg-pink-800 bg-opacity-50 p-4 rounded-xl border border-pink-400 border-opacity-30">
-                      <h3 className="text-xl font-semibold text-pink-200 mb-2">Special Dates</h3>
-                      <ul className="text-pink-300 space-y-2">
-                        <li>First Meet: Sept 20, 2024</li>
-                        <li>First Date: March 8, 2025</li>
-                        <li>Anniversary: April 4, 2026</li>
-                      </ul>
-                    </div>
-                    <div className="bg-pink-800 bg-opacity-50 p-4 rounded-xl border border-pink-400 border-opacity-30">
-                      <h3 className="text-xl font-semibold text-pink-200 mb-2">Our Places</h3>
-                      <ul className="text-pink-300 space-y-2">
-                        <li>Favorite Cafe: - </li>
-                        <li>Favorite Park: Kebun Raya Bogor</li>
-                        <li>Favorite Restaurant: Solaria</li>
-                      </ul>
-                    </div>
-                    <div className="bg-pink-800 bg-opacity-50 p-4 rounded-xl border border-pink-400 border-opacity-30">
-                      <h3 className="text-xl font-semibold text-pink-200 mb-2">Memories</h3>
-                      <ul className="text-pink-300 space-y-2">
-                        <li>Trips Together: - </li>
-                        <li>Movies Watched: - </li>
-                        <li>Songs Shared: -   </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              )}
-
+              
+              {/* Render Halaman */}
               {currentPage === 'memories' && <Gallery />}
-              {currentPage === 'calendar' && <LoveCalendar />}
               {currentPage === 'puzzle' && <LovePuzzle />}
               {currentPage === 'notes' && <LoveNotes />}
               {currentPage === 'music' && <MusicPlayer />}
+
             </div>
           </div>
         </div>
@@ -199,5 +103,3 @@ export default function MainMenu({ currentPage, setCurrentPage }) {
     </div>
   );
 }
-
-
