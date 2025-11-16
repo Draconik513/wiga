@@ -13,7 +13,7 @@ export default function App() {
   // Default page now is "memories", not home
   const [currentPage, setCurrentPage] = useState("memories");
 
-  const correctPassword = "ourlove";
+  const correctPassword = "Dear you";
 
   const handleUnlock = () => {
     setShowCountdown(true);
